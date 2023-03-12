@@ -18,7 +18,7 @@ resource "azurerm_virtual_machine_extension" "choco2" {
 
   protected_settings = <<PROTECTED_SETTINGS
     {
-      "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -command ./install.ps1; choco install openssh -y -params '/SSHServerFeature'"
+      "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -command ./install.ps1; choco install boxstarter -y "
     }
   PROTECTED_SETTINGS
 
